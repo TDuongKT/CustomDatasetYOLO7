@@ -1,0 +1,12 @@
+train: ./YOLOv7_Tiny/data/train/images
+val: ./YOLOv7_Tiny/data/valid/images
+
+nc: 3
+names: ['back', 'bottleneck', 'front']
+
+roboflow:
+  workspace: dataset-oti3p
+  project: filmerorr
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/dataset-oti3p/filmerorr/dataset/4

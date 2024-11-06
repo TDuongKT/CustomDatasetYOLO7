@@ -1,0 +1,24 @@
+Tạo file run.sh:
+#!/bin/bash
+cd /path/to/labelImg  # Thay đổi /path/to/labelImg thành đường dẫn thư mục chứa labelImg.py
+python labelImg.py
+
+sudo chmod +x Your/Path/To/run.sh
+
+sudo vi  /usr/share/applications/labelImg.desktop
+
+[Desktop Entry]
+Name=LabelImg
+Comment=Run LabelImg
+Exec=/path/to/labelImg.sh  # Thay đổi /path/to/labelImg.sh thành đường dẫn đến tập lệnh shell bạn muốn chạy
+Icon=/path/to/icon.png  # Thay đổi /path/to/icon.png thành đường dẫn đến biểu tượng của bạn
+Terminal=false
+Type=Application
+Categories=Utility;
+
+:wq
+
+sudo chmod +x /usr/share/applications/labelImg.desktop
+
+
+
